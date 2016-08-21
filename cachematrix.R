@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## Receives aMatrix and constructs a .
+##  sequence of functions that can be used to 
+##  access the matrix and its (cached) inverse
 
 makeCacheMatrix <- function(aMatrix = matrix()) {
   aCachedInverse <- NULL
@@ -18,7 +17,8 @@ makeCacheMatrix <- function(aMatrix = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Returns the inverse of the passed matrix
+##   and, if cached, returns from cache rather than computing
 
 cacheSolve <- function(solveable, ...) {
         ## Return a matrix that is the inverse of 'x' 
